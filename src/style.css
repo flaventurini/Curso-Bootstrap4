@@ -25,3 +25,14 @@
 .borda-cor-especial {
   border-color: darkred;
 }
+
+.card-tamanho {
+  width: 18rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card__imagem {
+  object-fit: cover;
+  height: 200px;
+}
