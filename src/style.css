@@ -14,12 +14,19 @@
 }
 
 .cor-especial {
-  color: darkred;
+  color: darkred!important;
 }
 
 .botao-cor-especial {
   background-color: darkred;
   color: white;
+  border-color: transparent;
+}
+
+.botao-cor-especial:hover {
+  background-color: rgb(184, 7, 7);
+  color: white;
+  border-color: transparent;
 }
 
 .borda-cor-especial {
@@ -27,9 +34,7 @@
 }
 
 .card-tamanho {
-  width: 18rem;
-  padding-left: 0;
-  padding-right: 0;
+  max-width: 18rem;
 }
 
 .card__imagem {

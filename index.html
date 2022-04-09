@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">fruta & frutos</a>
+        <a class="navbar-brand fonte__titulo cor-especial" href="#">fruta & frutos</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +33,7 @@
               <a class="nav-link" href="#">quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contato</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-contato">contato</a>
             </li>
           </ul>
         </div>
@@ -76,9 +76,9 @@
       <p class="text-center secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
     </section>
 
-    <section id="receitas" class="container">
-      <div class="row">
-        <article class="card borda-cor-especial card-tamanho col-12 col-md-2">
+    <section id="receitas" class="container-fluid bg-light">
+      <div class="row justify-content-center">
+        <article class="card borda-cor-especial card-tamanho p-0 m-4 col-12 col-md-4">
           <img src="src/img/receita-abacate.jpg" class="card-img-top card__imagem" alt="tigela com salada de abacate, vista superior">
           <div class="card-body">
             <h5 class="card-title">Tigela de abacate</h5>
@@ -86,7 +86,8 @@
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
         </article>
-        <article class="card borda-cor-especial card-tamanho col-12 col-md-2">
+
+        <article class="card borda-cor-especial card-tamanho p-0 m-4 col-12 col-md-4">
           <img src="src/img/receita-kiwi.jpg" class="card-img-top card__imagem" alt="tigela de mingau com kiwi, vista superior">
           <div class="card-body">
             <h5 class="card-title">Salada de kiwi</h5>
@@ -94,7 +95,8 @@
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
         </article>
-        <article class="card borda-cor-especial card-tamanho col-12 col-md-2">
+
+        <article class="card borda-cor-especial card-tamanho p-0 m-4 col-12 col-md-4">
           <img src="src/img/receita-mix.jpg" class="card-img-top card__imagem" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
           <div class="card-body">
             <h5 class="card-title">Mix de vegetais</h5>
@@ -102,7 +104,10 @@
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
         </article>
-        <article class="card borda-cor-especial card-tamanho col-12 col-md-2">
+      </div>
+
+      <div class="row justify-content-center">
+        <article class="card borda-cor-especial card-tamanho p-0 m-4 col-12 col-md-4">
           <img src="src/img/receita-pimentoes.jpg" class="card-img-top card__imagem" alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior">
           <div class="card-body">
             <h5 class="card-title">Pimentões à Juliana</h5>
@@ -110,7 +115,8 @@
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
         </article>
-        <article class="card borda-cor-especial card-tamanho col-12 col-md-2">
+
+        <article class="card borda-cor-especial card-tamanho p-0 m-4 col-12 col-md-4">
           <img src="src/img/receita-oriental.jpg" class="card-img-top card__imagem" alt="tigela com salada de vegetais estilo oriental, vista de cima">
           <div class="card-body">
             <h5 class="card-title">Prato oriental</h5>
@@ -118,7 +124,8 @@
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
         </article>
-        <article class="card borda-cor-especial card-tamanho col-12 col-md-2">
+
+        <article class="card borda-cor-especial card-tamanho p-0 m-4 col-12 col-md-4">
           <img src="src/img/receita-beterrabas.jpg" class="card-img-top card__imagem" alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo">
           <div class="card-body">
             <h5 class="card-title">Beterrabas assadas</h5>
@@ -130,11 +137,40 @@
     </section>
   </main>
 
-  <footer>
-    <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  <footer class="bg-secondary p-3">
+    <p class="text-light m-0 text-center">contato: <a href="mailto:email@frutafruto.com.br" class="text-light">email@frutafruto.com.br</a></p>
   </footer>
 
-  <script src=""></script>
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="Formulário de contato" aria-hidden="true">
+    <div class="modal-dialog">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+        <main class="modal-body">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Deixe seu comentário</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui seu comentário" rows="3"></textarea>
+          </div>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary botao-cor-especial">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
